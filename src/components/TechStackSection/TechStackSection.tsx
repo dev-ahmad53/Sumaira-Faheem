@@ -13,7 +13,7 @@ const technologies = [
 
 const TechStackSection = () => {
   return (
-    <div className="w-full py-6 border-t border-b border-foreground/10 bg-foreground/[0.02] flex flex-col items-center justify-center overflow-hidden">
+    <div className="w-full py-6 border-t-2 border-b-2 border-[#0C0300]/20 dark:border-[#FFF2EF]/20 bg-[#0C0300]/[0.02] dark:bg-[#FFF2EF]/[0.02] flex flex-col items-center justify-center overflow-hidden">
       <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -30,7 +30,7 @@ const TechStackSection = () => {
           {[...technologies, ...technologies, ...technologies].map((tech, i) => (
             <div 
               key={i} 
-              className="mx-3 px-5 py-2.5 rounded-full border border-foreground/10 bg-background/80 text-foreground font-medium text-sm flex items-center gap-3 transition-all hover:scale-105 hover:border-primary/50 hover:bg-foreground/5 cursor-default shadow-sm group shrink-0"
+              className="mx-3 px-5 py-2.5 rounded-full border border-[#0C0300]/20 dark:border-[#FFF2EF]/20 bg-background/80 text-foreground font-medium text-sm flex items-center gap-3 transition-all hover:scale-105 hover:border-primary/50 hover:bg-foreground/5 cursor-default shadow-sm group shrink-0"
             >
               <img 
                 src={tech.icon} 

@@ -55,7 +55,7 @@ export const ServicesSection = () => {
               viewport={{ once: true, amount: 0.1 }}
             >
               <MagicCard
-                className="h-full p-8 rounded-[2rem] border border-border/80 bg-card/80 shadow-md"
+                className="h-full p-8 rounded-[2rem] border border-2 border-[#0C0300]/20 dark:border-[#FFF2EF]/20 bg-card/80 shadow-md"
                 gradientSize={280}
                 gradientColor="rgba(196, 139, 113, 0.15)"
                 gradientFrom="#C48B71"
@@ -63,7 +63,7 @@ export const ServicesSection = () => {
               >
                 <div className="flex flex-col h-full justify-between gap-6">
                   <div>
-                    <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/25 text-primary flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/40 transition-all duration-300">
+                    <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-2 border-[#0C0300]/25 dark:border-[#FFF2EF]/25 text-primary flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/40 transition-all duration-300">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-foreground tracking-tight font-serif">

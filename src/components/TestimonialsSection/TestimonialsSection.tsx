@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
         transition={{ duration: 0.8 }}
         className="mb-16 text-center"
       >
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-2 border-[#0C0300]/20 dark:border-[#FFF2EF]/20 text-primary text-xs font-bold uppercase tracking-wider mb-3">
           <span>Happy Clients Say</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 font-serif">
@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="glass-panel p-8 rounded-3xl border border-foreground/10 flex flex-col relative overflow-hidden group hover:border-primary/30 transition-colors duration-500 justify-between"
+            className="glass-panel p-8 rounded-3xl border border-2 border-[#0C0300]/20 dark:border-[#FFF2EF]/20 flex flex-col relative overflow-hidden group hover:border-primary/30 transition-colors duration-500 justify-between"
           >
             {/* Subtle glow orb */}
             <div className="absolute -right-10 -top-10 w-32 h-32 bg-primary/10 rounded-full blur-[40px] group-hover:bg-primary/20 transition-colors duration-500 pointer-events-none" />

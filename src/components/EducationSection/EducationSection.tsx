@@ -50,7 +50,7 @@ export const EducationSection = () => {
           className="mb-12"
         >
           <div className="flex items-center gap-4 mb-3">
-            <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/25 flex items-center justify-center text-primary shadow-md">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-2 border-[#0C0300]/25 dark:border-[#FFF2EF]/25 flex items-center justify-center text-primary shadow-md">
               <GraduationCap className="w-6 h-6" />
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight font-serif">
@@ -75,7 +75,7 @@ export const EducationSection = () => {
                 viewport={{ once: true }}
               >
                 <MagicCard
-                  className="h-full p-8 rounded-[2.25rem] border border-border/80 bg-card/80 shadow-xl"
+                  className="h-full p-8 rounded-[2.25rem] border border-2 border-[#0C0300]/20 dark:border-[#FFF2EF]/20 bg-card/80 shadow-xl"
                   gradientSize={300}
                   gradientColor="rgba(196, 139, 113, 0.15)"
                   gradientFrom="#C48B71"
@@ -85,7 +85,7 @@ export const EducationSection = () => {
                     <div>
                       {/* Header with Icon and Distinction Badge */}
                       <div className="flex items-start justify-between gap-4 mb-6">
-                        <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/25 text-primary flex items-center justify-center shadow-sm">
+                        <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-2 border-[#0C0300]/25 dark:border-[#FFF2EF]/25 text-primary flex items-center justify-center shadow-sm">
                           <DegreeIcon className="w-7 h-7 text-primary" />
                         </div>
                         <span className={`px-3.5 py-1.5 rounded-full border text-xs font-extrabold flex items-center gap-1.5 shadow-sm ${edu.badgeColor}`}>

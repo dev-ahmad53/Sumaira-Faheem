@@ -87,7 +87,7 @@ export const ProjectsSection = () => {
             href={project.link}
             target="_blank"
             rel="noreferrer"
-            className={`group relative overflow-hidden rounded-[2.25rem] block shadow-xl border border-foreground/10 ${project.gridClass}`}
+            className={`group relative overflow-hidden rounded-[2.25rem] block shadow-xl border-2 border-[#0C0300]/25 dark:border-[#FFF2EF]/25 hover:border-[#0C0300] dark:hover:border-[#FFF2EF] ${project.gridClass}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
