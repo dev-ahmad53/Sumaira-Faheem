@@ -81,11 +81,11 @@ export const AboutSection = () => {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <div className="text-primary mb-3 p-2.5 bg-white/10 border border-white/20 text-[#FFF2EF] w-max rounded-xl mx-auto">
+                <div className="mb-2 p-2 bg-white/10 border border-white/20 text-[#F3DB9A] rounded-xl mx-auto">
                   {stat.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-[#FFF2EF] mb-1 font-serif">{stat.value}</h3>
-                <p className="text-[11px] font-semibold text-[#FFF2EF]/75 uppercase tracking-wider">{stat.label}</p>
+                <h3 className="text-2xl font-extrabold text-[#FFF2EF] mb-1 font-serif">{stat.value}</h3>
+                <p className="text-[11px] font-bold text-[#FFF2EF] uppercase tracking-wider">{stat.label}</p>
               </motion.div>
             ))}
           </div>

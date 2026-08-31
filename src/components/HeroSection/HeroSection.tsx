@@ -37,13 +37,13 @@ export const HeroSection = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="mb-6"
           >
-            <Badge variant="outline" size="lg" className="gap-2.5 py-1.5 px-4 glass-panel border-primary/30">
+            <div className="inline-flex items-center gap-2.5 py-1.5 px-4 rounded-full bg-[#2B1004] border-2 border-[#2B1004] text-[#FFF2EF] shadow-lg">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>
-              <span className="text-xs font-semibold text-foreground/90">Available for Brand & Social Media Projects</span>
-            </Badge>
+              <span className="text-xs font-bold text-[#FFF2EF] tracking-wide">Available for Brand & Social Media Projects</span>
+            </div>
           </motion.div>
 
           <motion.div
