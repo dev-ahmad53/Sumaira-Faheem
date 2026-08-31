@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180F0E" />
+      <stop offset="50%" stop-color="#241715" />
+      <stop offset="100%" stop-color="#100A09" />
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DB9A" />
+      <stop offset="40%" stop-color="#C48B71" />
+      <stop offset="80%" stop-color="#A66E58" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <linearGradient id="textGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#F3DB9A" />
+      <stop offset="100%" stop-color="#C48B71" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Square with Gold Border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="url(#goldBorder)" stroke-width="2.5" />
+  
+  <!-- Subtle Inner Ring -->
+  <rect x="5" y="5" width="54" height="54" rx="13" fill="none" stroke="rgba(243, 219, 154, 0.25)" stroke-width="1" />
+
+  <!-- Monogram Letters SF -->
+  <text 
+    x="32" 
+    y="41" 
+    font-family="'Playfair Display', Georgia, serif" 
+    font-size="27" 
+    font-weight="800" 
+    letter-spacing="-0.5" 
+    fill="url(#textGold)" 
+    text-anchor="middle"
+    filter="url(#glow)"
+  >SF</text>
+  
+  <!-- Tiny Sparkle Dot -->
+  <circle cx="48" cy="18" r="2" fill="#F3DB9A" />
+</svg>
