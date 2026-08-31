@@ -137,7 +137,7 @@ export const HeroSection = () => {
           >
             <div className="flex flex-col h-full bg-card w-full border border-primary/25 rounded-3xl overflow-hidden shadow-2xl">
               {/* Card Header Banner with Avatar */}
-              <div className="relative px-5 pt-7 pb-6 flex flex-col items-center bg-gradient-to-br from-[#0C0300] via-[#241715] to-[#3A2724] text-white overflow-hidden">
+              <div className="relative px-5 pt-7 pb-6 flex flex-col items-center bg-gradient-to-br from-[#2B1004] via-[#241715] to-[#3A2724] text-white overflow-hidden">
                 {/* Circuit background overlay */}
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:12px_12px] pointer-events-none" />
 

@@ -37,7 +37,7 @@ export const ContactSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.8 }}
-        className="glass-panel p-8 md:p-12 rounded-[3rem] border border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 relative overflow-hidden"
+        className="glass-panel p-8 md:p-12 rounded-[3rem] border border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 relative overflow-hidden"
       >
         {/* Background Gradients */}
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 blur-[100px] rounded-full pointer-events-none" />
@@ -48,7 +48,7 @@ export const ContactSection = () => {
           {/* Contact Info */}
           <div className="flex-1 space-y-8">
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 text-primary text-xs font-bold uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 text-primary text-xs font-bold uppercase tracking-wider mb-4">
                 <span>Let's Talk</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 font-serif">
@@ -101,7 +101,7 @@ export const ContactSection = () => {
           </div>
 
           {/* Form */}
-          <div className="flex-1 glass-panel p-8 rounded-[2rem] border border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 relative">
+          <div className="flex-1 glass-panel p-8 rounded-[2rem] border border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 relative">
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1.5">Your Name</label>
@@ -110,7 +110,7 @@ export const ContactSection = () => {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="rounded-xl py-3 px-4 bg-foreground/5 border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 text-foreground focus-visible:ring-primary placeholder:text-muted-foreground/50 text-sm"
+                  className="rounded-xl py-3 px-4 bg-foreground/5 border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 text-foreground focus-visible:ring-primary placeholder:text-muted-foreground/50 text-sm"
                   placeholder="e.g. Fatima / Subhan"
                 />
               </div>
@@ -122,7 +122,7 @@ export const ContactSection = () => {
                   required
                   value={contact}
                   onChange={(e) => setContact(e.target.value)}
-                  className="rounded-xl py-3 px-4 bg-foreground/5 border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 text-foreground focus-visible:ring-primary placeholder:text-muted-foreground/50 text-sm"
+                  className="rounded-xl py-3 px-4 bg-foreground/5 border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 text-foreground focus-visible:ring-primary placeholder:text-muted-foreground/50 text-sm"
                   placeholder="03xx-xxxxxxx or email"
                 />
               </div>
@@ -132,7 +132,7 @@ export const ContactSection = () => {
                 <select 
                   value={service}
                   onChange={(e) => setService(e.target.value)}
-                  className="w-full rounded-xl py-2.5 px-3.5 bg-foreground/5 border border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm font-medium"
+                  className="w-full rounded-xl py-2.5 px-3.5 bg-foreground/5 border border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm font-medium"
                 >
                   <option value="Brand Identity & Logo" className="bg-background text-foreground">Logo & Brand Identity</option>
                   <option value="Social Media Posts & Grid" className="bg-background text-foreground">Social Media Posts & Feed Design</option>
@@ -148,7 +148,7 @@ export const ContactSection = () => {
                   required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="rounded-xl py-3 px-4 bg-foreground/5 border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 text-foreground focus-visible:ring-primary resize-none placeholder:text-muted-foreground/50 min-h-[90px] text-sm"
+                  className="rounded-xl py-3 px-4 bg-foreground/5 border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 text-foreground focus-visible:ring-primary resize-none placeholder:text-muted-foreground/50 min-h-[90px] text-sm"
                   placeholder="Tell me about your business and timeframe..."
                 />
               </div>

@@ -75,7 +75,7 @@ export const AboutSection = () => {
             {stats.map((stat, i) => (
               <motion.div
                 key={i}
-                className="glass-panel p-5 rounded-2xl border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 hover:border-primary/50 transition-colors group relative overflow-hidden text-center"
+                className="glass-panel p-5 rounded-2xl border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 hover:border-primary/50 transition-colors group relative overflow-hidden text-center"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}

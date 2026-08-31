@@ -41,7 +41,7 @@ export default function ProfessionalProfile() {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="flex items-center gap-3 mb-2">
-        <div className="w-10 h-10 rounded-xl bg-primary/10 border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 flex items-center justify-center text-primary">
+        <div className="w-10 h-10 rounded-xl bg-primary/10 border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 flex items-center justify-center text-primary">
           <PenTool className="w-5 h-5" />
         </div>
         <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight font-serif">Software & Design Skills</h3>
@@ -49,7 +49,7 @@ export default function ProfessionalProfile() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Technical Skills */}
-        <div className="glass-panel p-8 rounded-[2rem] border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 shadow-xl relative overflow-hidden">
+        <div className="glass-panel p-8 rounded-[2rem] border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 shadow-xl relative overflow-hidden">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/60">
             <h4 className="text-xl font-bold text-foreground flex items-center gap-2 font-serif">
               <Sparkles className="w-5 h-5 text-primary" /> Design Arsenal
@@ -71,7 +71,7 @@ export default function ProfessionalProfile() {
                       </div>
                       {skill.name}
                     </span>
-                    <span className="font-mono font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full text-xs border-2 border-[#0C0300] dark:border-[#FFF2EF]/30">
+                    <span className="font-mono font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full text-xs border-2 border-[#2B1004] dark:border-[#FFF2EF]/30">
                       {skill.level}%
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function ProfessionalProfile() {
         </div>
 
         {/* Soft Skills & Traits */}
-        <div className="glass-panel p-8 rounded-[2rem] border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 shadow-xl flex flex-col justify-between">
+        <div className="glass-panel p-8 rounded-[2rem] border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 shadow-xl flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/60">
               <h4 className="text-xl font-bold text-foreground flex items-center gap-2 font-serif">
@@ -127,7 +127,7 @@ export default function ProfessionalProfile() {
           </div>
           
           <div className="mt-8 pt-6 border-t border-border/60">
-            <div className="p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-amber-500/5 to-transparent border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 flex items-start gap-3.5 shadow-sm">
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-amber-500/5 to-transparent border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 flex items-start gap-3.5 shadow-sm">
               <div className="p-2 rounded-xl bg-primary/20 text-primary shrink-0 mt-0.5">
                 <Rocket className="w-5 h-5" />
               </div>
