@@ -35,7 +35,10 @@ export const ServicesSection = () => {
         transition={{ duration: 0.8 }}
         className="mb-16 text-center"
       >
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-gradient-primary font-serif">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C0300]/5 dark:bg-[#FFF2EF]/10 border-2 border-[#0C0300] dark:border-[#FFF2EF]/40 text-[#0C0300] dark:text-[#FFF2EF] text-xs font-bold uppercase tracking-wider mb-3">
+          <span>What I Offer</span>
+        </div>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-[#0C0300] dark:text-[#FFF2EF] font-serif">
           Signature Design Services
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -55,7 +58,7 @@ export const ServicesSection = () => {
               viewport={{ once: true, amount: 0.1 }}
             >
               <MagicCard
-                className="h-full p-8 rounded-[2rem] border border-2 border-[#0C0300]/20 dark:border-[#FFF2EF]/20 bg-card/80 shadow-md"
+                className="h-full p-8 rounded-[2rem] border-2 border-[#0C0300] dark:border-[#FFF2EF]/30 bg-card shadow-md transition-all hover:border-[#A66E58] dark:hover:border-[#C48B71]"
                 gradientSize={280}
                 gradientColor="rgba(196, 139, 113, 0.15)"
                 gradientFrom="#C48B71"
@@ -63,10 +66,11 @@ export const ServicesSection = () => {
               >
                 <div className="flex flex-col h-full justify-between gap-6">
                   <div>
-                    <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-2 border-[#0C0300]/25 dark:border-[#FFF2EF]/25 text-primary flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/40 transition-all duration-300">
-                      <Icon className="w-7 h-7 text-primary" />
+                    {/* Icon Box with solid #0C0300 border */}
+                    <div className="w-14 h-14 rounded-2xl bg-[#0C0300]/5 dark:bg-[#FFF2EF]/10 border-2 border-[#0C0300] dark:border-[#FFF2EF]/40 text-[#0C0300] dark:text-[#FFF2EF] flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-[#0C0300] group-hover:text-[#FFF2EF] transition-all duration-300">
+                      <Icon className="w-7 h-7" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-foreground tracking-tight font-serif">
+                    <h3 className="text-2xl font-bold mb-3 text-[#0C0300] dark:text-[#FFF2EF] tracking-tight font-serif">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed text-base font-sans">
