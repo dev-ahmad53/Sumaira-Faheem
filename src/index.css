@@ -20,7 +20,7 @@
   :root {
     --bg: #FFF2EF; /* Warm Rose Blush Background (User Specified) */
     --fg: #0C0300; /* Midnight Obsidian Espresso (User Specified) */
-    --card: #FFFFFF;
+    --card: #FFF8F6;
     --card-fg: #0C0300;
     --primary: #A66E58; /* Signature Terracotta */
     --primary-fg: #FFF2EF;
@@ -45,12 +45,17 @@
     --glass-border: rgba(255, 242, 239, 0.15);
   }
 
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+  html, body, #root {
+    background-color: #FFF2EF !important;
+    color: #0C0300;
     min-height: 100vh;
     font-family: 'Plus Jakarta Sans', sans-serif;
     transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  .dark html, .dark body, .dark #root, html.dark, body.dark {
+    background-color: #0C0300 !important;
+    color: #FFF2EF !important;
   }
   
   .dark body {
@@ -64,6 +69,13 @@
     background-color: rgba(196, 139, 113, 0.35);
     color: #0C0300;
   }
+}
+
+.bg-background {
+  background-color: #FFF2EF !important;
+}
+.dark .bg-background {
+  background-color: #0C0300 !important;
 }
 
 .glass-panel {

@@ -58,7 +58,7 @@ function App() {
   ];
 
   return (
-    <div className="bg-transparent min-h-screen relative overflow-x-hidden selection:bg-primary/30 selection:text-foreground">
+    <div className="bg-[#FFF2EF] dark:bg-[#0C0300] min-h-screen relative overflow-x-hidden selection:bg-primary/30 selection:text-foreground transition-colors duration-300">
       <SmoothCursor glowEffect showTrail trailLength={4} color="#C48B71" />
       <ReactLenis root options={{ smoothWheel: true, duration: 1.2 }}>
         <Header />

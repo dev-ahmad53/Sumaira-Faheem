@@ -20,13 +20,13 @@
   --darklw-2: #1a1d25;
 
   /* HSL values for theme colors */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  --background: 11 100% 97%;
+  --foreground: 12 100% 2%;
 
-  --card: 0 0% 100%;
+  --card: 11 100% 98%;
   --card-foreground: 0 0% 0%;
 
-  --popover: 0 0% 100%;
+  --popover: 11 100% 97%;
   --popover-foreground: 0 0% 0%;
 
   --primary: 230 100% 55%;
