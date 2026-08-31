@@ -43,7 +43,7 @@ export function MagicCard({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "group relative flex flex-col justify-between rounded-3xl border border-border/80 bg-card/90 backdrop-blur-md p-8 shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 overflow-hidden cursor-pointer",
+        "group relative flex flex-col justify-between rounded-3xl border border-border/80 bg-[#2B1004] text-[#FFF2EF] backdrop-blur-md p-8 shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 overflow-hidden cursor-pointer",
         className
       )}
       {...props}

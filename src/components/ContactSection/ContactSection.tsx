@@ -54,7 +54,7 @@ export const ContactSection = () => {
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 font-serif">
                 Let's <span className="text-gradient-primary">Connect</span>
               </h2>
-              <p className="text-muted-foreground leading-relaxed text-base">
+              <p className="text-[#FFF2EF]/80 leading-relaxed text-base">
                 Ready to elevate your brand visuals and social media presence? Reach out directly via WhatsApp, Phone, Email, or send a quick inquiry below!
               </p>
             </div>
@@ -94,7 +94,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <span className="text-xs text-muted-foreground block">Location:</span>
-                  <span className="font-bold text-foreground">Karachi, Pakistan (Global Remote)</span>
+                  <span className="font-bold text-[#FFF2EF]">Karachi, Pakistan (Global Remote)</span>
                 </div>
               </div>
             </div>

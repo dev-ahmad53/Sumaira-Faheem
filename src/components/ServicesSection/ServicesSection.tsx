@@ -35,7 +35,7 @@ export const ServicesSection = () => {
         transition={{ duration: 0.8 }}
         className="mb-16 text-center"
       >
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2B1004]/5 dark:bg-[#FFF2EF]/10 border-2 border-[#2B1004] dark:border-[#FFF2EF]/40 text-[#2B1004] dark:text-[#FFF2EF] text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2B1004]/10 border-2 border-[#2B1004] text-[#2B1004] dark:text-[#FFF2EF] text-xs font-bold uppercase tracking-wider mb-3">
           <span>What I Offer</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-[#2B1004] dark:text-[#FFF2EF] font-serif">
@@ -58,22 +58,22 @@ export const ServicesSection = () => {
               viewport={{ once: true, amount: 0.1 }}
             >
               <MagicCard
-                className="h-full p-8 rounded-[2rem] border-2 border-[#2B1004] dark:border-[#FFF2EF]/30 bg-card shadow-md transition-all hover:border-[#A66E58] dark:hover:border-[#C48B71]"
+                className="h-full p-8 rounded-[2.25rem] border-2 border-[#2B1004] bg-[#2B1004] text-[#FFF2EF] shadow-2xl transition-all hover:border-[#C48B71]"
                 gradientSize={280}
-                gradientColor="rgba(196, 139, 113, 0.15)"
+                gradientColor="rgba(196, 139, 113, 0.22)"
                 gradientFrom="#C48B71"
                 gradientTo="#F3DB9A"
               >
                 <div className="flex flex-col h-full justify-between gap-6">
                   <div>
-                    {/* Icon Box with solid #2B1004 border */}
-                    <div className="w-14 h-14 rounded-2xl bg-[#2B1004]/5 dark:bg-[#FFF2EF]/10 border-2 border-[#2B1004] dark:border-[#FFF2EF]/40 text-[#2B1004] dark:text-[#FFF2EF] flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-[#2B1004] group-hover:text-[#FFF2EF] transition-all duration-300">
+                    {/* Icon Box with contrast border */}
+                    <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 text-[#FFF2EF] flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-[#C48B71] group-hover:text-[#2B1004] transition-all duration-300">
                       <Icon className="w-7 h-7" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-[#2B1004] dark:text-[#FFF2EF] tracking-tight font-serif">
+                    <h3 className="text-2xl font-bold mb-3 text-[#FFF2EF] tracking-tight font-serif">
                       {service.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed text-base font-sans">
+                    <p className="text-[#FFF2EF]/80 leading-relaxed text-base font-sans">
                       {service.description}
                     </p>
                   </div>

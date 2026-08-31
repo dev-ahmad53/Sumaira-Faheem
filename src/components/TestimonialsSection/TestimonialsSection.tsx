@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
               </svg>
             </div>
 
-            <p className="text-muted-foreground leading-relaxed flex-grow relative z-10 italic mb-8 text-sm">
+            <p className="text-[#FFF2EF]/85 leading-relaxed flex-grow relative z-10 italic mb-8 text-sm">
               "{test.content}"
             </p>
 
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
                 {test.initials}
               </div>
               <div>
-                <h4 className="text-foreground font-bold text-sm font-serif">{test.name}</h4>
+                <h4 className="text-[#FFF2EF] font-bold text-sm font-serif">{test.name}</h4>
                 <p className="text-primary text-xs font-medium">{test.role}</p>
               </div>
             </div>

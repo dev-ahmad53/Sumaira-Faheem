@@ -18,31 +18,31 @@
 
 @layer base {
   :root {
-    --bg: #FFF2EF; /* Warm Rose Blush Background */
-    --fg: #2B1004; /* Rich Chocolate Mocha (User Specified) */
-    --card: #FFF8F6;
-    --card-fg: #2B1004;
-    --primary: #A66E58; /* Signature Terracotta */
-    --primary-fg: #FFF2EF;
+    --bg: #FFF2EF; /* Warm Rose Blush Webpage Background */
+    --fg: #2B1004; /* Rich Chocolate Mocha Text */
+    --card: #2B1004; /* Card Background in #2B1004 (User Specified) */
+    --card-fg: #FFF2EF; /* Card Text in #FFF2EF */
+    --primary: #C48B71; /* Rose Gold Terracotta */
+    --primary-fg: #2B1004;
     --muted: #F8E5E1;
-    --muted-fg: #6B4335;
-    --border: #2B1004; /* #2B1004 Border Line */
-    --glass-bg: rgba(255, 242, 239, 0.95);
-    --glass-border: #2B1004; /* #2B1004 Glass Border */
+    --muted-fg: #7A5345;
+    --border: #2B1004;
+    --glass-bg: rgba(43, 16, 4, 0.95);
+    --glass-border: rgba(43, 16, 4, 0.3);
   }
 
   .dark {
-    --bg: #140702; /* Deep Obsidian Mocha */
-    --fg: #FFF2EF; /* Warm Rose Blush Text */
-    --card: #1F0D05; /* Deep Mocha Obsidian Card */
+    --bg: #140702;
+    --fg: #FFF2EF;
+    --card: #2B1004; /* Card Background in #2B1004 */
     --card-fg: #FFF2EF;
-    --primary: #C48B71; /* Rose Gold Terracotta */
+    --primary: #C48B71;
     --primary-fg: #140702;
     --muted: #2B1207;
     --muted-fg: #D4BDB7;
     --border: rgba(255, 242, 239, 0.25);
-    --glass-bg: rgba(20, 7, 2, 0.90);
-    --glass-border: rgba(255, 242, 239, 0.22);
+    --glass-bg: rgba(43, 16, 4, 0.95);
+    --glass-border: rgba(255, 242, 239, 0.25);
   }
 
   html, body, #root {
@@ -83,7 +83,7 @@
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 2px solid var(--glass-border);
-  box-shadow: 0 8px 32px rgba(43, 16, 4, 0.08);
+  box-shadow: 0 8px 32px rgba(43, 16, 4, 0.12);
 }
 
 @keyframes brandShimmer {
@@ -139,18 +139,17 @@
 
 .btn-outline-brand {
   border: 2px solid #2B1004 !important;
-  color: var(--color-foreground) !important;
-  background: var(--glass-bg) !important;
+  color: #2B1004 !important;
+  background: rgba(255, 242, 239, 0.9) !important;
   font-weight: 700 !important;
   transition: all 0.25s ease !important;
 }
 .dark .btn-outline-brand {
   border: 2px solid rgba(255, 242, 239, 0.4) !important;
+  color: #FFF2EF !important;
+  background: rgba(43, 16, 4, 0.8) !important;
 }
 .btn-outline-brand:hover {
-  background: rgba(43, 16, 4, 0.08) !important;
+  background: rgba(43, 16, 4, 0.1) !important;
   transform: translateY(-2px) !important;
-}
-.dark .btn-outline-brand:hover {
-  background: rgba(255, 242, 239, 0.12) !important;
 }

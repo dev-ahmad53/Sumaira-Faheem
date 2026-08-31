@@ -95,7 +95,7 @@ export const EducationSection = () => {
                       </div>
 
                       {/* Degree Title & Institution Meta */}
-                      <h3 className="text-2xl font-extrabold text-foreground tracking-tight mb-2 font-serif">
+                      <h3 className="text-2xl font-extrabold text-[#FFF2EF] tracking-tight mb-2 font-serif">
                         {edu.degree}
                       </h3>
                       
@@ -112,7 +112,7 @@ export const EducationSection = () => {
                       {/* Key Highlights List */}
                       <ul className="space-y-3.5">
                         {edu.details.map((detail, j) => (
-                          <li key={j} className="text-sm text-muted-foreground flex items-start gap-3 leading-relaxed">
+                          <li key={j} className="text-sm text-[#FFF2EF]/80 flex items-start gap-3 leading-relaxed">
                             <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                             <span className="text-foreground/90 font-medium">{detail}</span>
                           </li>
