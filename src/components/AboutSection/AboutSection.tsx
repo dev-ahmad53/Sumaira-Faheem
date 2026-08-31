@@ -41,9 +41,9 @@ export const AboutSection = () => {
                   <span className="px-3 py-1 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wider shadow">
                     Verified Designer
                   </span>
-                  <span className="text-[11px] text-[#FAF7F2]/90 font-medium">Karachi, PK</span>
+                  <span className="text-[11px] text-[#FFF2EF]/90 font-medium">Karachi, PK</span>
                 </div>
-                <h4 className="text-xl font-serif font-bold text-[#FAF7F2]">Sumaira Faheem</h4>
+                <h4 className="text-xl font-serif font-bold text-[#FFF2EF]">Sumaira Faheem</h4>
                 <p className="text-xs text-[#E8D4C8] font-medium">Graphic Designer & Visual Brand Marketer</p>
               </div>
             </div>

@@ -18,31 +18,31 @@
 
 @layer base {
   :root {
-    --bg: #FAF7F2; /* Warm Cream Linen */
-    --fg: #180F0E; /* Deep Chocolate Espresso */
+    --bg: #FFF2EF; /* Warm Rose Blush Background (User Specified) */
+    --fg: #0C0300; /* Midnight Obsidian Espresso (User Specified) */
     --card: #FFFFFF;
-    --card-fg: #180F0E;
+    --card-fg: #0C0300;
     --primary: #A66E58; /* Signature Terracotta */
-    --primary-fg: #FFFFFF;
-    --muted: #F3ECE4;
-    --muted-fg: #7A6860;
-    --border: #E8DCD0;
-    --glass-bg: rgba(250, 247, 242, 0.92);
-    --glass-border: rgba(166, 110, 88, 0.22);
+    --primary-fg: #FFF2EF;
+    --muted: #F8E5E1;
+    --muted-fg: #5C3D34;
+    --border: #E8D0C9;
+    --glass-bg: rgba(255, 242, 239, 0.94);
+    --glass-border: rgba(12, 3, 0, 0.12);
   }
 
   .dark {
-    --bg: #120B0A; /* Velvety Dark Chocolate */
-    --fg: #FAF7F2; /* Ivory Silk */
-    --card: #1C1312; /* Deep Mocha */
-    --card-fg: #FAF7F2;
+    --bg: #0C0300; /* Ultra-Deep Midnight Espresso (User Specified) */
+    --fg: #FFF2EF; /* Warm Rose Blush Text (User Specified) */
+    --card: #160804; /* Deep Mocha Obsidian Card */
+    --card-fg: #FFF2EF;
     --primary: #C48B71; /* Rose Gold Terracotta */
-    --primary-fg: #FFFFFF;
-    --muted: #241716;
-    --muted-fg: #BAA8A0;
-    --border: #3D2723;
-    --glass-bg: rgba(24, 15, 14, 0.88);
-    --glass-border: rgba(232, 212, 200, 0.18);
+    --primary-fg: #0C0300;
+    --muted: #220D07;
+    --muted-fg: #D4BDB7;
+    --border: #3A1B13;
+    --glass-bg: rgba(12, 3, 0, 0.88);
+    --glass-border: rgba(255, 242, 239, 0.15);
   }
 
   body {
@@ -55,14 +55,14 @@
   
   .dark body {
     background-image: 
-      radial-gradient(circle at top right, rgba(196, 139, 113, 0.18) 0%, transparent 60%),
-      radial-gradient(circle at center left, rgba(212, 175, 55, 0.09) 0%, transparent 50%),
-      radial-gradient(circle at bottom right, rgba(166, 110, 88, 0.14) 0%, transparent 55%);
+      radial-gradient(circle at top right, rgba(196, 139, 113, 0.20) 0%, transparent 60%),
+      radial-gradient(circle at center left, rgba(212, 175, 55, 0.10) 0%, transparent 50%),
+      radial-gradient(circle at bottom right, rgba(166, 110, 88, 0.16) 0%, transparent 55%);
   }
 
   ::selection {
     background-color: rgba(196, 139, 113, 0.35);
-    color: #180F0E;
+    color: #0C0300;
   }
 }
 
@@ -71,7 +71,7 @@
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--glass-border);
-  box-shadow: 0 8px 32px rgba(24, 15, 14, 0.08);
+  box-shadow: 0 8px 32px rgba(12, 3, 0, 0.08);
 }
 
 @keyframes brandShimmer {
@@ -81,7 +81,7 @@
 }
 
 .brand-aurora-text {
-  background: linear-gradient(90deg, #D4AF37 0%, #C48B71 28%, #FAF7F2 50%, #F3DB9A 72%, #A66E58 100%);
+  background: linear-gradient(90deg, #D4AF37 0%, #C48B71 28%, #FFF2EF 50%, #F3DB9A 72%, #A66E58 100%);
   background-size: 250% 250%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,22 +89,22 @@
 }
 
 .text-gradient-primary {
-  background: linear-gradient(135deg, #C48B71 0%, #E8D4C8 45%, #F3DB9A 100%);
+  background: linear-gradient(135deg, #C48B71 0%, #FFF2EF 45%, #F3DB9A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .btn-primary-brand {
   background-color: #A66E58 !important;
-  color: #FAF7F2 !important;
+  color: #FFF2EF !important;
   font-weight: 700 !important;
   box-shadow: 0 0 20px rgba(166, 110, 88, 0.4) !important;
   transition: all 0.25s ease !important;
 }
 .dark .btn-primary-brand {
   background-color: #C48B71 !important;
-  color: #120B0A !important;
-  box-shadow: 0 0 25px rgba(196, 139, 113, 0.5) !important;
+  color: #0C0300 !important;
+  box-shadow: 0 0 25px rgba(196, 139, 113, 0.55) !important;
 }
 .btn-primary-brand:hover {
   opacity: 0.92 !important;
