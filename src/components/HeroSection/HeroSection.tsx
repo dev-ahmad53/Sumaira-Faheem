@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Linkedin, Mail, Phone } from "lucide-react";
 import TechStackSection from "../TechStackSection/TechStackSection";
-import { Button } from "../lightswind/button";
 import { Badge } from "../lightswind/badge";
 import { HangingIdCard } from "../lightswind/HangingIdCard";
-import { AuroraTextEffect } from "../lightswind/aurora-text-effect";
 import { DotPattern } from "../lightswind/dot-pattern";
 
 export const HeroSection = () => {
@@ -44,7 +42,7 @@ export const HeroSection = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>
-              <span className="text-xs font-semibold text-foreground/80">Available for Brand & Social Media Projects</span>
+              <span className="text-xs font-semibold text-foreground/90">Available for Brand & Social Media Projects</span>
             </Badge>
           </motion.div>
 
@@ -58,21 +56,11 @@ export const HeroSection = () => {
               Hi, I'm
             </h1>
             
-            {/* Light Theme: Clean Vibrant Terracotta/Espresso Gradient Text */}
-            <div className="block dark:hidden">
-              <span className="bg-gradient-to-r from-[#8A4F3D] via-[#A66E58] to-[#D4AF37] bg-clip-text text-transparent font-extrabold text-[clamp(2.75rem,6vw,5.2rem)] leading-none tracking-tight block pb-2 select-none font-serif">
+            {/* Shimmering Terracotta & Gold Shimmer Headline */}
+            <div className="py-1">
+              <span className="brand-aurora-text font-extrabold text-[clamp(2.85rem,6.5vw,5.5rem)] leading-tight tracking-tight block font-serif select-none drop-shadow-[0_4px_24px_rgba(196,139,113,0.3)]">
                 Sumaira Faheem
               </span>
-            </div>
-
-            {/* Dark Theme: Rich Terracotta Rose Gold Aurora Text Effect */}
-            <div className="hidden dark:block">
-              <AuroraTextEffect
-                text="Sumaira Faheem"
-                fontSize="clamp(2.75rem, 6vw, 5.2rem)"
-                className="bg-transparent overflow-visible p-0 justify-start font-serif"
-                textClassName="bg-gradient-to-r from-[#C48B71] via-[#E8D4C8] to-[#F3DB9A] bg-clip-text text-transparent pb-2 font-extrabold font-serif"
-              />
             </div>
           </motion.div>
 
@@ -85,27 +73,28 @@ export const HeroSection = () => {
             Turning simple ideas into memorable designs that connect with people. Specializing in branding, social media posts, carousel graphics, and creative marketing visuals.
           </motion.p>
 
+          {/* Action Buttons */}
           <motion.div 
             className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10 w-full md:w-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <Button 
-              size="lg" 
+            <button 
               onClick={scrollToProjects}
-              className="rounded-full px-7 h-12 bg-primary text-white font-bold flex items-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(166,110,88,0.35)] hover:shadow-[0_0_30px_rgba(166,110,88,0.55)] hover:-translate-y-1 cursor-pointer"
+              className="btn-primary-brand rounded-full px-8 h-12 flex items-center gap-2 cursor-pointer text-sm tracking-wide"
             >
-              View Portfolio <ArrowRight className="w-4 h-4" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+              <span>View Portfolio</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+            
+            <button 
               onClick={scrollToContact}
-              className="rounded-full px-7 h-12 glass-panel text-foreground font-bold flex items-center gap-2 hover:bg-primary/10 transition-all hover:-translate-y-1 border-primary/30 cursor-pointer"
+              className="btn-outline-brand rounded-full px-8 h-12 flex items-center gap-2 cursor-pointer text-sm tracking-wide"
             >
-              Contact Me <Download className="w-4 h-4" />
-            </Button>
+              <span>Contact Me</span>
+              <Download className="w-4 h-4" />
+            </button>
           </motion.div>
 
           {/* Social Links */}
