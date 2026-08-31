@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+@plugin 'lightswind/plugin';
+
+@theme {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-fg);
+  --color-primary: var(--primary);
+  --color-primary-foreground: #ffffff;
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-fg);
+  --color-border: var(--border);
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg: #FAF7F2; /* Warm Cream Linen */
+    --fg: #180F0E; /* Deep Chocolate Espresso */
+    --card: #FFFFFF;
+    --card-fg: #180F0E;
+    --primary: #A66E58; /* Signature Terracotta Copper */
+    --muted: #F3ECE4;
+    --muted-fg: #7A6860;
+    --border: #E8DCD0;
+    --glass-bg: rgba(250, 247, 242, 0.9);
+    --glass-border: rgba(166, 110, 88, 0.2);
+  }
+
+  .dark {
+    --bg: #120B0A; /* Velvety Dark Chocolate */
+    --fg: #FAF7F2; /* Ivory Silk */
+    --card: #1C1312; /* Deep Mocha */
+    --card-fg: #FAF7F2;
+    --primary: #C48B71; /* Rose Gold Terracotta */
+    --muted: #241716;
+    --muted-fg: #BAA8A0;
+    --border: #3D2723;
+    --glass-bg: rgba(24, 15, 14, 0.88);
+    --glass-border: rgba(232, 212, 200, 0.15);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  .dark body {
+    background-image: 
+      radial-gradient(circle at top right, rgba(196, 139, 113, 0.16) 0%, transparent 60%),
+      radial-gradient(circle at center left, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at bottom right, rgba(166, 110, 88, 0.12) 0%, transparent 55%);
+  }
+
+  ::selection {
+    background-color: rgba(196, 139, 113, 0.35);
+    color: #180F0E;
+  }
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px rgba(24, 15, 14, 0.07);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #C48B71 0%, #E8D4C8 45%, #F3DB9A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #F3DB9A 60%, #A66E58 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.copper-glow {
+  box-shadow: 0 0 25px rgba(196, 139, 113, 0.3);
+}
