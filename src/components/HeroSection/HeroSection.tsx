@@ -149,7 +149,6 @@ export const HeroSection = () => {
                     className="w-full h-full object-cover rounded-full filter contrast-105"
                     loading="eager"
                   />
-                  <div className="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow-md" />
                 </div>
               </div>
 
