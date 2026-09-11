@@ -5,19 +5,15 @@ import { Badge } from "../lightswind/badge";
 import { HangingIdCard } from "../lightswind/HangingIdCard";
 import { DotPattern } from "../lightswind/dot-pattern";
 
-export const HeroSection = ({ onOpenArchive }: { onOpenArchive?: () => void }) => {
+export const HeroSection = () => {
   const scrollToContact = () => {
     const el = document.getElementById("contact");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleViewPortfolio = () => {
-    if (onOpenArchive) {
-      onOpenArchive();
-    } else {
-      const el = document.getElementById("projects");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollToProjects = () => {
+    const el = document.getElementById("projects");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -85,7 +81,7 @@ export const HeroSection = ({ onOpenArchive }: { onOpenArchive?: () => void }) =
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <button 
-              onClick={handleViewPortfolio}
+              onClick={scrollToProjects}
               className="btn-primary-brand rounded-full px-8 h-12 flex items-center gap-2 cursor-pointer text-sm tracking-wide"
             >
               <span>View Portfolio</span>

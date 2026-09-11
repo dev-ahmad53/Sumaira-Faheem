@@ -8,14 +8,13 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Projects", href: "#projects" },
-  { name: "Archive", href: "#archive" },
   { name: "Career", href: "#career" },
   { name: "Skills", href: "#education" },
   { name: "Reviews", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
 
-const Header = ({ onOpenArchive }: { onOpenArchive?: () => void }) => {
+const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -34,11 +33,6 @@ const Header = ({ onOpenArchive }: { onOpenArchive?: () => void }) => {
   }, []);
 
   const handleScrollTo = (id: string) => {
-    if (id === "#archive" && onOpenArchive) {
-      setIsMobileMenuOpen(false);
-      onOpenArchive();
-      return;
-    }
     setIsMobileMenuOpen(false);
     const element = document.querySelector(id);
     if (element) {

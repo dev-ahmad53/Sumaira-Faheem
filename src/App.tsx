@@ -10,9 +10,8 @@ import { CareerTimeline } from "./components/CareerSection/CareerTimeline";
 import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSection";
 import { ContactSection } from "./components/ContactSection/ContactSection";
 import { Footer } from "./components/Footer/Footer";
-import { DriveArchivePage } from "./components/DriveArchive/DriveArchivePage";
 import ReactLenis from "lenis/react";
-import { Home, User, GraduationCap, Briefcase, FolderKanban, Send, MessageSquare, Archive } from "lucide-react";
+import { Home, User, GraduationCap, Briefcase, FolderKanban, Send, MessageSquare } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import Dock from "./components/lightswind/dock";
@@ -20,7 +19,6 @@ import { SmoothCursor } from "./components/lightswind/smooth-cursor";
 
 function App() {
   const [showDock, setShowDock] = useState(false);
-  const [viewMode, setViewMode] = useState<"home" | "archive">("home");
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -43,14 +41,6 @@ function App() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    if (viewMode === "archive") {
-      setViewMode("home");
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 100);
-      return;
-    }
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -61,7 +51,6 @@ function App() {
     { icon: <Home size={20} />, label: "Home", onClick: () => scrollToSection("hero") },
     { icon: <User size={20} />, label: "About", onClick: () => scrollToSection("about") },
     { icon: <FolderKanban size={20} />, label: "Projects", onClick: () => scrollToSection("projects") },
-    { icon: <Archive size={20} />, label: "Archive", onClick: () => setViewMode("archive") },
     { icon: <Briefcase size={20} />, label: "Career", onClick: () => scrollToSection("career") },
     { icon: <GraduationCap size={20} />, label: "Skills", onClick: () => scrollToSection("education") },
     { icon: <MessageSquare size={20} />, label: "Reviews", onClick: () => scrollToSection("testimonials") },
@@ -72,63 +61,44 @@ function App() {
     <div className="bg-[#FFF2EF] dark:bg-[#0C0300] min-h-screen relative overflow-x-hidden selection:bg-primary/30 selection:text-foreground transition-colors duration-300">
       <SmoothCursor glowEffect showTrail trailLength={4} color="#C48B71" />
       <ReactLenis root options={{ smoothWheel: true, duration: 1.2 }}>
-        
-        {viewMode === "archive" ? (
-          <DriveArchivePage onBackToHome={() => {
-            setViewMode("home");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }} />
-        ) : (
-          <>
-            <Header onOpenArchive={() => {
-              setViewMode("archive");
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }} />
+        <Header />
 
-            <main className="w-full flex flex-col pt-10 border-none">
-              <HeroSection onOpenArchive={() => {
-                setViewMode("archive");
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }} />
-              <AboutSection />
-              <ServicesSection />
-              <ProjectsSection onOpenArchive={() => {
-                setViewMode("archive");
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }} />
-              <CareerTimeline />
-              <EducationSection />
-              <TestimonialsSection />
-              <ContactSection />
-            </main>
+        <main className="w-full flex flex-col pt-10 border-none">
+          <HeroSection />
+          <AboutSection />
+          <ServicesSection />
+          <ProjectsSection />
+          <CareerTimeline />
+          <EducationSection />
+          <TestimonialsSection />
+          <ContactSection />
+        </main>
 
-            {/* Footer */}
-            <Footer />
+        {/* Footer */}
+        <Footer />
 
-            {/* Floating Dock */}
-            <AnimatePresence>
-              {showDock && (
-                <motion.div
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: 100, opacity: 0 }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
-                  className="fixed bottom-3 left-0 right-0 z-[999] hidden md:block"
-                >
-                  <Dock
-                    items={dockItems}
-                    panelHeight={58}
-                    baseItemSize={46}
-                    magnification={68}
-                    distance={180}
-                    itemBorderColor="rgba(196,139,113,0.3)"
-                    multiBorder
-                  />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </>
-        )}
+        {/* Floating Dock */}
+        <AnimatePresence>
+          {showDock && (
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 100, opacity: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="fixed bottom-3 left-0 right-0 z-[999] hidden md:block"
+            >
+              <Dock
+                items={dockItems}
+                panelHeight={58}
+                baseItemSize={46}
+                magnification={68}
+                distance={180}
+                itemBorderColor="rgba(196,139,113,0.3)"
+                multiBorder
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </ReactLenis>
     </div>
   );
