@@ -108,7 +108,7 @@ export const projectFolders: ProjectFolder[] = [
     description: "Corporate marketing campaign series: ROI growth visual flyers, business scaling acquisition posts, corporate consulting flyers, and lead generation ad creative suites.",
     coverImage: "/projects/b2b/That__39_s_your_Marketing_20250601_211938_0000.jpg",
     driveUrl: "https://drive.google.com/drive/folders/1Lk4YINhT1AgK5AasQMFlZr6T92Aow8OU",
-    tags: ["B2B Marketing", "Corporate Posts", "Illustrator", "Lead Generation", "Agency Ads"],
+    tags: ["B2B Marketing", "Corporate Posts", "AI Creation", "Lead Generation", "Agency Ads"],
     images: [
       {
         title: "That's Your Marketing Strategy Visual (Cover)",
@@ -170,7 +170,7 @@ export const projectFolders: ProjectFolder[] = [
     description: "Enterprise tech & digital agency creative suite: website hero graphics for linksols.com, software launch posts, cloud infrastructure banners, and cyber IT service announcements.",
     coverImage: "/projects/linksols/www__linksols.com_20260706_233628_0000.png",
     driveUrl: "https://drive.google.com/drive/folders/1Qba9EJnZkhiETqnQhZi_Sj5SG9vXZn7B",
-    tags: ["Tech Branding", "Website Graphics", "Software Ads", "Cloud IT", "Photoshop"],
+    tags: ["Tech Branding", "Website Graphics", "Software Ads", "Cloud IT", "AI Generation"],
     images: [
       {
         title: "linksols.com Modern Tech Web Creatives (Cover)",

@@ -44,7 +44,7 @@ export const driveFolders: DriveFolderData[] = [
       "High-Converting Acquisition Visuals",
       "Instagram Commercial Feed Posts"
     ],
-    tags: ["B2B Marketing", "Instagram Ads", "Corporate Banners", "Adobe Illustrator"]
+    tags: ["B2B Marketing", "Instagram Ads", "Corporate Banners", "Canva Pro"]
   },
   {
     id: "1nBpqQLJabeVnpS4mB-vCAv3gfi_8UqpZ",
@@ -78,7 +78,7 @@ export const driveFolders: DriveFolderData[] = [
       "Service Launch Visuals",
       "Corporate Tech Flyers"
     ],
-    tags: ["Tech Branding", "Ad Creatives", "Photoshop", "Website Graphics"]
+    tags: ["Tech Branding", "Ad Creatives", "AI Generation", "Website Graphics"]
   },
   {
     id: "14IlywyC5L7Qw7Ki1segc-YjzfsaZdTeI",

@@ -32,7 +32,7 @@ export const CareerTimeline = () => {
       title: "Graphic & Brand Identity Designer",
       subtitle: "Digital Media & Brand Agency",
       description:
-        "Created memorable vector logos, product box packaging, visiting cards, and social media post templates using Canva Pro, Adobe Illustrator, and Photoshop.",
+        "Created memorable vector logos, product box packaging, visiting cards, and social media post templates using Canva Pro, AI tools, and AI Video Creation.",
       icon: <Briefcase className="h-4 w-4 mr-2 text-primary" />,
     },
   ];

@@ -11,7 +11,7 @@ export const Footer = () => {
     "Sumaira Faheem",
     "Brand Specialist",
     "Visual Storyteller",
-    "Canva & Adobe Pro",
+    "Canva & AI Specialist",
     "Karachi, Pakistan",
   ];
 

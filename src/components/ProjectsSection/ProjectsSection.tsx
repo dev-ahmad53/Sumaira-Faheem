@@ -49,7 +49,7 @@ export const ProjectsSection = ({ onOpenProjectsPage }: { onOpenProjectsPage?: (
               Full visual identity crafted for a premium perfume house: gold-foil vector logos, bespoke perfume box packaging, bottle stickers, and luxury social launch creatives.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["Brand Identity", "Box Packaging", "Adobe Illustrator", "Bottle Mockups", "Gold Foil Vector"].map((tag, i) => (
+              {["Brand Identity", "Box Packaging", "Canva Pro", "Bottle Mockups", "Gold Foil Vector"].map((tag, i) => (
                 <span key={i} className="text-xs px-3 py-1 rounded-lg bg-white/10 text-[#FFF2EF] font-medium border border-white/15">
                   {tag}
                 </span>
@@ -89,7 +89,7 @@ export const ProjectsSection = ({ onOpenProjectsPage }: { onOpenProjectsPage?: (
               Awarded 1st place in the national Graphic Design Contest for crafting patriotic, high-converting promotional banners and social media ads.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
-              {["Contest Winner", "Social Ads", "Photoshop", "Typography"].map((tag, i) => (
+              {["Contest Winner", "Social Ads", "AI Generation", "Typography"].map((tag, i) => (
                 <span key={i} className="text-xs px-3 py-1 rounded-lg bg-white/10 text-[#FFF2EF] font-medium border border-white/15">
                   {tag}
                 </span>

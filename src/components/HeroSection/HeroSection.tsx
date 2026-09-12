@@ -208,7 +208,7 @@ export const HeroSection = ({ onOpenProjectsPage }: { onOpenProjectsPage?: () =>
                       SF-2025-PRO
                     </span>
                     <span className="text-muted-foreground font-semibold text-[9px] uppercase tracking-wider">
-                      CANVA & ADOBE PRO
+                      CANVA & AI PRO
                     </span>
                   </div>
                 </div>

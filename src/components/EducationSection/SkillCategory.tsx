@@ -15,8 +15,8 @@ import {
 export default function ProfessionalProfile() {
   const technicalSkills = [
     { name: "Canva Pro Mastery", level: 98, icon: Sparkles, color: "text-[#F3DB9A]" },
-    { name: "Adobe Illustrator (Logos & Vectors)", level: 92, icon: PenTool, color: "text-[#C48B71]" },
-    { name: "Adobe Photoshop (Banners & Mockups)", level: 90, icon: Palette, color: "text-[#E8D4C8]" },
+    { name: "AI Video Creation", level: 92, icon: PenTool, color: "text-[#C48B71]" },
+    { name: "AI Prompting & Generative Design", level: 90, icon: Palette, color: "text-[#E8D4C8]" },
     { name: "Meta Suite & Social Advertising", level: 88, icon: Layers, color: "text-emerald-400" },
     { name: "Brand Identity & Palette Architecture", level: 95, icon: Crown, color: "text-[#F3DB9A]" },
   ];

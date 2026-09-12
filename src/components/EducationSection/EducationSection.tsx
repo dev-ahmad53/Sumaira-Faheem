@@ -6,7 +6,7 @@ import SkillCategory from "./SkillCategory";
 const education = [
   {
     degree: "Professional Graphic Design Certification",
-    school: "Canva & Adobe Masterclass",
+    school: "Canva & AI Design Masterclass",
     year: "2023 - 2024",
     badge: "Verified Specialist",
     badgeIcon: Award,
