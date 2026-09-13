@@ -63,7 +63,7 @@ export const AboutSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               I'm a graphic designer who enjoys turning simple ideas into designs that connect with people. 
               I specialize in branding, social media, and marketing visuals, keeping my style clean and creative. 
-              For me, design isn't just about looking good — it's about making your brand memorable.
+              For me, design isn't just about looking good, it's about making your brand memorable.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               I also use modern AI & design tools to generate fresh concepts and speed up delivery. Based in 

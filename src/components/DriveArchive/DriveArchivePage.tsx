@@ -82,7 +82,7 @@ export const driveFolders: DriveFolderData[] = [
   },
   {
     id: "14IlywyC5L7Qw7Ki1segc-YjzfsaZdTeI",
-    name: "Personal Branding — Rahma Tariq",
+    name: "Personal Branding (Rahma Tariq)",
     category: "Personal Branding",
     fileCount: 26,
     featuredBadge: "Viral Carousels",
@@ -237,7 +237,7 @@ export const DriveArchivePage = ({ onBackToHome }: DriveArchivePageProps) => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2B1004]/10 border-2 border-[#2B1004] text-[#2B1004] dark:text-[#FFF2EF] text-xs font-bold uppercase tracking-wider mb-4">
             <Sparkles className="w-3.5 h-3.5 text-[#A66E58]" />
-            <span>Official Google Drive Archive • 2024–2025</span>
+            <span>Official Google Drive Archive • 2025</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-4 font-serif text-[#2B1004] dark:text-[#FFF2EF]">

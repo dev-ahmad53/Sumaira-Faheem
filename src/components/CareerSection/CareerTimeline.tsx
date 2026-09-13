@@ -4,7 +4,7 @@ import { Briefcase, Award, Sparkles, Users, Globe } from "lucide-react";
 export const CareerTimeline = () => {
   const careerEvents = [
     {
-      year: "2024 – Present",
+      year: "2024 to Present",
       title: "Lead Brand Strategist & Visual Designer",
       subtitle: "Sumaira Faheem Creative Studio (Karachi & Remote)",
       description:
@@ -20,7 +20,7 @@ export const CareerTimeline = () => {
       icon: <Award className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      year: "2023 – 2024",
+      year: "2023 to 2024",
       title: "Social Media Creative Specialist",
       subtitle: "Freelance & B2B Digital Solution",
       description:
@@ -28,7 +28,7 @@ export const CareerTimeline = () => {
       icon: <Sparkles className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      year: "2021 – 2023",
+      year: "2021 to 2023",
       title: "Graphic & Brand Identity Designer",
       subtitle: "Digital Media & Brand Agency",
       description:

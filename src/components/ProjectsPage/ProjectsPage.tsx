@@ -223,10 +223,10 @@ export const projectFolders: ProjectFolder[] = [
     ]
   },
 
-  // 4. Personal Branding — Rahma Tariq
+  // 4. Personal Branding (Rahma Tariq)
   {
     id: "rahma-tariq",
-    name: "Personal Branding — Rahma Tariq",
+    name: "Personal Branding (Rahma Tariq)",
     category: "Personal Branding",
     client: "Rahma Tariq (Homeschooling Educator)",
     description: "Thought-leadership viral educational carousels: complete 9-slide swipeable series on burnout, educator guidance, YouTube session banners, and personal branding story layouts.",
@@ -518,7 +518,7 @@ export const ProjectsPage = ({ onBackToHome }: ProjectsPageProps) => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2B1004]/10 border-2 border-[#2B1004] text-[#2B1004] dark:text-[#FFF2EF] text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#A66E58]" />
-            <span>Multi-Image Project Galleries • 2024–2025</span>
+            <span>Multi-Image Project Galleries • 2025</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-4 font-serif text-[#2B1004] dark:text-[#FFF2EF]">

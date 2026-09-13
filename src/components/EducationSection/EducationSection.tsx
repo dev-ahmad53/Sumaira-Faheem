@@ -7,7 +7,7 @@ const education = [
   {
     degree: "Professional Graphic Design Certification",
     school: "Canva & AI Design Masterclass",
-    year: "2023 - 2024",
+    year: "2023 to 2024",
     badge: "Verified Specialist",
     badgeIcon: Award,
     badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/40",
@@ -21,7 +21,7 @@ const education = [
   {
     degree: "Digital Marketing & Brand Strategy",
     school: "Meta & Google Certified Digital Skills",
-    year: "2022 - 2023",
+    year: "2022 to 2023",
     badge: "Certified Marketer",
     badgeIcon: Award,
     badgeColor: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",

@@ -13,7 +13,7 @@ export const ProjectsSection = ({ onOpenProjectsPage }: { onOpenProjectsPage?: (
       >
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2B1004]/10 border-2 border-[#2B1004] text-[#2B1004] dark:text-[#FFF2EF] text-xs font-bold uppercase tracking-wider mb-3 shadow-sm">
           <Sparkles className="w-3.5 h-3.5 text-[#A66E58]" />
-          <span>Signature Works • Portfolio 2024–2025</span>
+          <span>Signature Works • Portfolio 2025</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-[#2B1004] dark:text-[#FFF2EF] font-serif">
           Featured Client Works
